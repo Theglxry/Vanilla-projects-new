@@ -1,4 +1,8 @@
- # Projects And Challenges With Vanilla JavaScript
+![alt text](Vanilla-projects-new/bg-img.png)
+ )
+
+
+# Projects And Challenges With Vanilla JavaScript
 
 This is the main repository for all of my vanilla projects .
 
