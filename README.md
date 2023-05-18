@@ -1,4 +1,4 @@
-![alt text](Vanilla-projects-new/bg-img.png)
+![alt text](/bg-img.png)
  )
 
 
