@@ -1,5 +1,5 @@
 ![alt text](/bg-img.png)
- )
+ 
 
 
 # Projects And Challenges With Vanilla JavaScript
