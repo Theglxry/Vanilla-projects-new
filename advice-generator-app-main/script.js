@@ -18,7 +18,7 @@ window.onload = () => {
   }
   
 
-  
+
   function displayAdvice(advice, id) {
     const adviceId = document.querySelector("p");
     const adviceQuote = document.querySelector("h2");
@@ -30,29 +30,27 @@ window.onload = () => {
   // Function that fetches and avoids repeated quotes
   const usedQuotes = new Set(); // Set to store used quote IDs
   
+ 
 
-  const getRandomAdvice = () => {
-    fetch("https://api.adviceslip.com/advice")
-      .then((response) => response.json())
-      .then((result) => {
-        console.log(result);
-        const id = result.slip.id;
-  
-        if (!usedQuotes.has(id)) {
-          const advice = result.slip.advice;
-          displayAdvice(advice, id);
-          usedQuotes.add(id);
-          console.log(usedQuotes);
-        } else {
-          // If it's a repeated quote, fetch another one
-          getRandomAdvice();
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+const getRandomAdvice = async () => {
+  try {
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const result = await response.json();
+    console.log(result);
+    const id = result.slip.id;
+
+    if (!usedQuotes.has(id)) {
+      const advice = result.slip.advice;
+      displayAdvice(advice, id);
+      usedQuotes.add(id);
+      console.log(usedQuotes);
+    } else {
+      await getRandomAdvice(); // Use await to ensure the recursive call is awaited.
+    }
+  } catch (error) {
+    console.error("Error:", error);
   }
-  
+};
 
 
   const icon = document.getElementById("die");
