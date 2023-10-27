@@ -12,7 +12,7 @@ This is the main repository for all of my vanilla projects .
 | 02  |     [Modal Widnow](github-link )    | [Live Demo](live-demo)  |
 | 03  |    [Guess-My-Number](github-link )     | [Live Demo](live-demo)  |
 | 04  |  [faq-accordion-card]( )  | [Live Demo]( )  |
-| 05  | [interactive-rating-component]( )  | [Live Demo]( )  |
+| 05  | [interactive-rating-component](https://github.com/Theglxry/Vanilla-projects-new/tree/master/advice-generator-app-main)  | [Live Demo](https://advice-generator-one-psi.vercel.app/)  |
 | 06  |    [ ]( )    | [Live Demo]( )  |
 | 07  |        [ ]( )       | [Live Demo]( )  |
 | 08  |       [ ]( )      | [Live Demo]( )  |
