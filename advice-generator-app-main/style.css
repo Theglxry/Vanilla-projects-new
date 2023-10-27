@@ -82,13 +82,13 @@ main {
   align-items: center;
   background-color: #f0f0f0;  
   border-radius: 50%;  
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
   cursor: pointer;
   background: var(--neonGreen);
   transition: transform 0.3s;
 }
-
- 
+ #die:hover {
+  box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+}
 #die img{
   width: 20px; 
   height: 20px;
