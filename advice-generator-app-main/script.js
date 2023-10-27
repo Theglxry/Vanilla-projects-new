@@ -1,5 +1,6 @@
 window.onload = () => {
-    getRandomAdvice();
+  displayAdvice("It is easy to sit up and take notice, what's difficult is getting up and taking action.", 117);
+    // getRandomAdvice();
     checkOnlineStatus();
   };
 

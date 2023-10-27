@@ -35,8 +35,8 @@ main {
   height: 100vh;
   padding: 1rem;
   flex-direction: column;
-
 }
+ 
 
 .flexCol {
   display: flex;
@@ -45,11 +45,12 @@ main {
 }
 
 .container {
+  width: 100%;
   margin: auto;
   border-radius: 5px;
   position: relative;
   flex-direction: column;
-  padding: 1rem 2rem 3rem;
+  padding: 1rem 2rem 4rem;
   box-shadow: 0 10px 10px rgb(0 0 0 / 0.5);
   background-color: var(--darkGreyishBlue);
 }
@@ -61,13 +62,18 @@ main {
   text-align: center;
   padding-bottom: 1rem;
 }
-
+.lines {
+  width: 100%;
+}
 .lines .desktop-line {
   display: none;
 }
+.lines img {
+  width: 100%;
+}
 
 #die {
-  top: 85%;
+  top: 90%;
   width: 50px; 
   height: 50px;  
   display: flex;
@@ -84,8 +90,8 @@ main {
 
  
 #die img{
-  width: 30px; 
-  height: 30px;
+  width: 20px; 
+  height: 20px;
 }
 
 .rotate {
@@ -119,8 +125,10 @@ main {
 /** large screens */
 @media (min-width: 768px) {
   .container {
-    max-width: 40rem;
+    width: 100%;
+    max-width: 33.5rem;
   }
+ 
   .lines .mobile-line {
     display: none;
   }
