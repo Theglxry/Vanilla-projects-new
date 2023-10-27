@@ -67,6 +67,9 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
+
+
+
 //the again button
 document.querySelector('.again').addEventListener('click', function () {
   console.log('Again button clicked!');
