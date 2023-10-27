@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+/*variables */
+/**  ROOT  **/
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --primary: hsl(216, 12%, 8%);
+  --secondary: hsl(213, 19%, 18%);
+  --tertiary: hsl(216, 12%, 54%);
+  --primary-accent: hsl(25, 97%, 53%);
+  --secondary-accent: hsl(214, 19%, 21%);
+  --tertiary-accent: hsl(216, 12%, 54%);
+
+  /*font styling*/
+  /* size */
+  --font-small: 1rem;
+  /* --font-small: 16px; */
+
+  --font-mid: 2rem;
+  --font-large: 4rem;
+  --cta: 1.25rem;
+  /* weight */
+  --font-thing: 100;
+  --font-reg: 400;
+  --font-bold: 700;
+
+  /* border styliing */
+  --circle: 50%;
+  --rounded: 28px;
+  --slight: 5px;
+}
+
+/** BOX SIZING **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/** Default margins and padding **/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/** Default heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/** Default image styles */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/** UTILITY CLASSES **/
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+.display-none {
+  display: none !important;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+/** BASE STYLNG **/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--primary);
+  font-family: "Overpass", sans-serif;
+}
+main {
+  padding: 1rem;
+}
+
+.container {
+  background-color: var(--secondary);
+  margin: 0 auto;
+  /* max-width: 80%;
+    padding: 1.5rem; */
+  max-width: 28rem;
+  padding: 2.25rem;
+  border-radius: var(--rounded);
+}
+
+.rating-container {
+  gap: 2rem;
+}
+
+.star {
+  padding: 1.25rem;
+  width: 4rem;
+  border-radius: var(--circle);
+  background-color: var(--secondary-accent);
+}
+
+.rating-text {
+  gap: 1rem;
+}
+.rating-text h1 {
+  font-size: var(--font-mid);
+  color: var(--white);
+  /* gap: 1rem; */
+}
+.rating-text p {
+  /* padding: 0.2rem; */
+  line-height: 1.5;
+  color: var(--tertiary);
+  font-size: var(--font-small);
+}
+
+.rating-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 18px;
+  text-align: center;
+  font-weight: var(--font-bold);
+  color: var(--tertiary);
+  font-size: var(--font-small);
+  border-radius: var(--circle);
+  background-color: var(--secondary-accent);
+  border: none;
+}
+
+.btn:hover {
+  color: var(--white);
+  background-color: var(--tertiary-accent);
+  cursor: pointer;
+}
+.btn-focus:focus {
+  background-color: var(--primary-accent);
+}
+
+.submit {
+  border: none;
+  padding: 0.75rem;
+  font-size: var(--font-small);
+  border-radius: var(--rounded);
+  background-color: var(--primary-accent);
+}
+.submit:hover {
+  background-color: var(--white);
+  color: var(--primary-accent);
+  cursor: pointer;
+}
+.sub-text {
+  letter-spacing: 1.5px;
+  font-weight: var(--font-bold);
+  color: var(--white);
+  font-size: var(--cta);
+}
+button p:hover {
+  color: var(--primary-accent);
+}
+
+/** THANK YOU SECTION **/
+
+.illustration {
+  max-width: 10rem;
+}
+
+.selected {
+  padding: 0.3rem 1.75rem;
+  border-radius: var(--rounded);
+  color: var(--primary-accent);
+  background-color: var(--secondary-accent);
+}
+
+.thankyou-section h2 {
+  color: var(--white);
+  font-size: var(--font-mid);
+  text-align: center;
+}
+.thankyou-text {
+  max-width: 22.5rem;
+}
+.thankyou-text p {
+  line-height: 1.75;
+  color: var(--tertiary);
+  font-size: var(--font-small);
+  text-align: center;
+}
+ 
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--tertiary);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen  and (max-width: 375px){
+
+}

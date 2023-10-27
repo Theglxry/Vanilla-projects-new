@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*variables */
+/**  ROOT  **/
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  /** - Very dark desaturated blue */
+  --primary:  hsl(238, 29%, 16%);
+  /** - Very dark grayish blue*/
+  --secondary:hsl(237, 12%, 33%); 
+  /** - Dark grayish blue  */
+  --tertiary: hsl(240, 6%, 50%);
+  /** -soft red */
+  --primary-accent: hsl(14, 88%, 65%);
+
+
+  /**font styling*/
+  /* size */
+  --font-small: 0.75rem;
+  --font-mid: 2rem;
+  --font-large: 3rem;
+  --cta: 1.25rem;
+
+  /* weight */
+  --font-thing: 100;
+  --font-reg: 400;
+  --font-bold: 700;
+
+  /* border styliing */
+  --bottom-border: 2px solid hsl(240, 5%, 91%);
+  --circle: 50%;
+  --rounded: 25px;
+  --slight: 5px;
+  /* --secondary-accent: hsl(240, 6%, 50%); */
+  /* --tertiary-accent: hsl(216, 12%, 54%); */
+}
+
+/** BOX SIZING **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/** Default margins and padding **/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/** Default heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ul,
+ol {
+  list-style: none;
+} */
+
+/** Default image styles */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/** UTILITY CLASSES **/
+/* .flex-column{
+    display: flex;
+    flex-direction: column;
+gap: 1rem;
+} */
+/* .flex-row{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+} */
+/* .display-none{
+    display: none;
+}
+  */
+
+
+.arrow {
+  color: var(--primary-accent);
+}
+
+/** BASE STYLNG **/
+/* @media screen and (min-width: 375px) { */
+
+
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%));
+  background-color:  hsl(240, 73%, 65%);
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  font-family: 'Kumbh Sans', sans-serif;
+
+  /* codingLab */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* padding: 10px; */
+}
+main {
+  padding: 1rem;
+}
+/* .container {
+  position: relative;
+  margin:80px auto 0;
+  max-width: 28rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: var(--rounded);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+
+} */
+/* .illustration {
+    margin: 0 auto ;
+    padding: 2rem;
+    border: 2px solid red;
+    height: 20vh;
+    position: relative;
+
+    position: absolute;
+    max-width: 50rem;
+    bottom: 100%;
+} */
+/* .illustration img{
+    max-width: 20rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 10%;
+    bottom: 0;
+}
+ img.shadow {
+    border: 2px solid yellow;
+    position: absolute;
+  bottom: -20px; 
+  right: 5px; 
+  z-index: -1;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); 
+ }
+  */
+
+/* 
+.accordion{
+    border: 2px solid green;
+} */
+
+/* h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: var(--font-large);
+
+    border: 2px solid rgb(0, 87, 128);
+
+} */
+/* .accordion h3 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--font-thing);
+    font-size: var(--font-mid);
+    color: var(--primary);
+}
+.question-1{
+    padding-bottom: 2rem;
+border-bottom: var(--bottom-line);
+} */
+
+/* } */
+
+
+/* *FRONTEND MENTOR* */
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>  */
+
+/** ____DESKTOP DESIGN_____ */
+/* @media (min-width: 800px) { } */
+
+.accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 80%;
+  margin: auto ;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: var(--rounded);
+  padding: 45px 90px 45px 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 2px solid red; */
+
+  /* width: 100%; */
+  /* gap: 12em; */
+  /* max-width: 1010px; */
+  /* margin: 35rem auto 0; */
+
+}
+.accordion .image-box-desktop {
+height: 360px;
+width: 50%;
+right: 10%;
+position: relative;
+/* border: 2px solid rgb(30, 171, 33); */
+
+
+/* width: 300px; */
+/* width: 18.7rem; */
+
+}
+
+.accordion .image-box-desktop img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: contain;
+  /* border: 2px solid lime; */
+}
+ 
+.accordion .image-box-desktop .img-2 {
+  right: 65%;
+  top: 15%;
+  width: 20rem;
+  border: 15px solid rgb(17, 0, 255);
+}
+.accordion .image-box-desktop .img-3{
+  right: 65%;
+  top: 15%;
+  width: 20rem;
+}
+.accordion .image-box-desktop .shadow{
+  /* border: 2px solid yellow; */
+  width: 80rem;
+  position: absolute;
+  bottom: -100px; 
+  right: 5px; 
+  z-index:100;
+/* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);  */
+  border: 15px solid rgb(38, 255, 0);
+
+}
+
+ .accordion .accordion-text{
+  width: 50%;
+  border: 2px solid rgb(25, 57, 153);
+/* padding: 5rem; */
+ }
+
+ .accordion .accordion-text .title {
+  font-size: var(--font-mid);
+  font-weight: var(--font-bold);
+  color: var(--primary);
+  padding-bottom: 2rem;
+
+
+ }
+
+
+ .accordion .accordion-text .faq-text {
+  margin-top: 25px;
+ }
+
+ .accordion .accordion-text li {
+  list-style-type: none;
+  cursor: pointer;
+  padding-bottom: 1rem;
+ }
+
+ .accordion .accordion-text li .question-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+
+ }
+
+ .accordion .accordion-text li .question-arrow .question{
+  font-size: 18px; 
+  font-weight: var(--font-bold);
+  color: var(--secondary);
+  transition: all 0.3s ease;
+ }
+
+ .accordion-text li.showAnswer .question-arrow .arrow{
+  transform: rotate(-180deg);
+}
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow{
+  color: #7d2ae8;
+}
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow{
+  color: #7d2ae8;
+}
+.accordion-text li .line{
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.accordion-text li p{
+  width: 92%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--bottom-border);
+  display: none;
+}
+.accordion-text li.showAnswer p{
+  display: block;
+}

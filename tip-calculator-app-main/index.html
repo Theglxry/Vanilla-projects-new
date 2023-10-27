@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="flexCenter logo"><img src="images/logo.svg" alt="" /></div>
+
+        <div class="flexCol calc-wrapper">
+          <div class="card-1 flexCol calc-div">
+            <div class="flexCol tip">
+              <p class="invalid" id="invalid-figure" >Can't be zero</p>
+              
+              <label for="amount-input">Bill</label>
+
+              <div class="flexCenter currency-input">
+                <img class="currency-icon" src="/images/icon-dollar.svg" alt="$" />
+                <input type="number" id="amount-input" placeholder="0.00" />
+              </div>
+
+            </div>
+
+
+
+            
+            <div class="tip-selection">
+              <p>Select Tip %</p>
+              <div class="displayGrid button">
+                <button  onclick="getTips(5)">5%</button>
+                <button onclick="getTips(10)">10%</button>
+                <button onclick="getTips(15)" class="active">15%</button><button>25%</button>
+                <button onclick="getTips(50)">50%</button>
+
+                <input type="number" placeholder="Custom" class="neutral" id="custom-input" onchange=getTips()/>
+              </div>
+            </div>
+
+
+
+            <div class="flexCol tip">
+              <p class="invalid" id="invalid-people">Can't be zero</p>
+              <label for="people count">Number of People</label>
+              <div class="flexCenter currency-input">
+                <img class="currency-icon" src="/images/icon-person.svg" alt="" />
+                <input type="number" placeholder="0" id="people-count" />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- CARD TWO -->
+          <div class="card-2 calc-div">
+            <div class="tip-output-wrapper">
+              <div class="tip-output">
+                <div tip-deets>
+                  Tip Amount <br />
+                  <p class="person">/ person</p>
+                </div>
+
+                <div class="tip-figures" id="tip-amount">$0.00</div>
+              </div>
+
+
+
+              <div class="tip-output">
+                <div tip-deets>
+                  Total <br />
+                  <p>/ person</p>
+                </div>
+
+                <div class="tip-figures" id="total-bill">$0.00</div>
+              </div>
+            </div>
+
+            <button class="reset active button" id="reset">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+<script src="index.js"></script>
+
+  </body>
+</html>
